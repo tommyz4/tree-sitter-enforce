@@ -93,7 +93,12 @@
   "}"
 ] @punctuation.bracket
 
-; TODO: <> in decl_class
+(type_parameters
+  [
+    "<"
+    ">"
+  ] @punctuation.bracket)
+
 (types
   [
     "<"

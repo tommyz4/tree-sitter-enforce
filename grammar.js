@@ -154,8 +154,15 @@ export default grammar({
     return: $ => seq('return', optional($._expression), ';'),
 
     if: $ => prec.right(seq(
-      'if', '(', $._expression, ')', $.statement,
-      optional(seq('else', $.statement))
+      'if',
+      '(',
+      field("condition", $._expression),
+      ')',
+      field("consequence", $.statement),
+      optional(seq(
+        'else',
+        field("alternative", $.statement)
+      ))
     )),
 
     switch: $ => seq(

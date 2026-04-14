@@ -1,4 +1,5 @@
 {
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
   "grammars": [
     {
       "name": "enforce",
@@ -34,9 +35,11 @@
   "bindings": {
     "c": false,
     "go": true,
+    "java": false,
     "node": false,
     "python": false,
     "rust": false,
-    "swift": false
+    "swift": false,
+    "zig": false
   }
 }

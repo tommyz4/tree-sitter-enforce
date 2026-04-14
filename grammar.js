@@ -33,7 +33,7 @@ const PREC = {
 
 const PREPROC_WS = token.immediate(/[\s\t]+/);
 
-module.exports = grammar({
+export default grammar({
   name: "enforce",
 
   supertypes: $ => [

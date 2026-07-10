@@ -33,7 +33,7 @@
     }
   },
   "bindings": {
-    "c": false,
+    "c": true,
     "go": true,
     "java": false,
     "node": false,

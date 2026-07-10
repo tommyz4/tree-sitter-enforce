@@ -37,7 +37,7 @@
     "go": true,
     "java": true,
     "node": true,
-    "python": false,
+    "python": true,
     "rust": false,
     "swift": false,
     "zig": false
